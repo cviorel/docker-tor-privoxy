@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  tor-privoxy:
+    image: cviorel/tor-privoxy
+    container_name: tor-privoxy  
+    restart: always
+    ports:
+      - "9050:9050"
+      - "8118:8118"
